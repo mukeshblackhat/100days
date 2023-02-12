@@ -1,0 +1,26 @@
+
+today i studied about Stack :
+
+data structure is type of ds where 
+data structure  is Last In Fast Out 
+LIFO 
+
+in STL we have seen some common issues
+ create stack 
+
+ stack <int>  Name;
+
+ Name.push();
+ Name.pop();
+ Name.empty();
+ Name.top();
+
+ these are some common function that we will impliment 
+ stack can be implimented by two ways 
+ either by 
+ * Arrays 
+ * linked list 
+
+ creating a class and implimenting using array is easy task ;
+ 
+  
