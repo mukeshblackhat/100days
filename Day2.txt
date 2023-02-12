@@ -1,0 +1,91 @@
+Networking ...
+
+Internet :- it is group of computers sharing info 
+
+OSI model for tranfering data across devices 
+  > there are 7 layers in osi model 
+    >>Application layer : client interaction (web interaction and browsers)
+    >>Presentation Layer: encription / decription / compression of data consver of ASCII to etsm 
+    >>Session Layer : authenticate / authorise and establish connection 
+    >>Transport Layer:brakes the data into packets and error control and assign of port number and sequence number 
+    >>Network Layer:routers work over here / load balancing take place with assigning of ip address to the packates for data transfer
+    >>Data link Layer:for assining of the mac address 
+    >>Physical Layer: cabels , elctric signal , light signal , radio signals 
+
+IP address : X.X.X.X  0<x<255
+isp provides a modern and their is one ip address assigned to it and shown as your ip over internet 
+using DHCP protocol (dynamic host config protocol)
+  > to assign local ip to all devices in a modem 
+TCP (total transmission protocol) 100% of data tranfer is ensured
+UDP : some data loss can be manages like during vedio call some frames loss can be compromised 
+HTTP: for taransfer of the data over web 
+PN: port number for getting application 
+SN: sequence number for data packets to reassemble the data correctly 
+0-1023 ports are reserved and 1024-49152 are reseved for the private application 
+
+
+OSI model is more like theoretical then being practical 
+
+TCP/IP model is practical MODEL  used more with five layers 
+ >> application layer
+ >>transfer layer
+ >>network layer
+ >>Data link layer
+ >>physical layer
+
+
+ now lets talk in depth about 
+ >>> Application Layer
+     users interact with this layer 
+     on your devices 
+     there are several protocols to transfer data 
+
+     >here are two architecture for data transfer about client server connection 
+         >>client server architecture 
+         >>peer to peer architecture 
+         >>hybride architecture 
+        
+    
+some general terms and devices 
+  
+  1. repeater : regenerate signal over same natwork 
+               >operates in physical layer
+               >it dosn't amplify the signal 
+               
+  2. Hub : collection of repeater(star topology)
+      >Acitve Hub : clean boost and relay the signal 
+                  : use to extent maximum node 
+                  : server are both repeter as well wiring repeter
+      >Passive Hub :supply from active hub 
+                   :no cleaning , no boost , no centeral disk
+
+  3. Bridge : at data link layer 
+            : additional functionality by adding two port bridge input and output 
+
+  4. Switch  : multiport bridge 
+             : error checking 
+
+  5. Gateway : to connect two network working on different networking model 
+
+
+
+# protocols 
+  * TCP/IP
+    >HTTP 
+    >DHCP
+    >FTP-> file transfer protocol 
+    >SMTP->simple mail transfer protocol 
+    >POP3 /IMAC -> to recieve emails
+    >SSH->for remote login to others terminal 
+    >VNC->vertical network computing for graphical control 
+
+  * TELNET(port:23) 
+    >manage account or devices remotely 
+
+
+***************************************************************************************************************************************************************************************************
+---------------DAY 2-----------------DAY 2 -------------DAY 2-----------DAY 2---------------------DAY 2---------------------------DAY 2-----------------------DAY 2-------------------
+***************************************************************************************************************************************************************************************************
+
+  * UDP : stateless connection
+     .
