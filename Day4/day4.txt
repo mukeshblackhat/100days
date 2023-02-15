@@ -1,0 +1,6 @@
+its day 4 :
+today i studied about stack and qeue 
+and implimentation of qeue 
+
+Qeue :it is FIFO first in first out 
+ 
