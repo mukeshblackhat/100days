@@ -1,0 +1,6 @@
+today i learned about 
+Qeue : 
+   it is LIFO last in fast out 
+   here we need two pointers to traverse and work 
+   we want one at start another at end and everything will work well 
+
