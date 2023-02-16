@@ -73,3 +73,12 @@ HTTP methods telling server what to do
    we can also get our gmail server ip 
    by command 
    >> ~nslookup -type =mn gmail.com 
+
+   for SMTP server of gmail 
+
+   POP -> post office protocol
+       -> port 110 
+       -> authorization -> client ask for all his emials in server 
+       it dont include drafts and other folder of gmail we see 
+       
+
