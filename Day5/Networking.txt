@@ -1,0 +1,75 @@
+today i learned about :
+
+program consists of lot of process and each process contain lot of threads 
+
+taking example of whatsapp :
+whatsapp is program 
+send messege , calls , status -> process
+camera access, creating msg page , accessing photo -> threads 
+ thread(single jobs only ...)
+
+if we want to connect and want to send messeges then we need to use 
+Socket : send msg from one place to another 
+       : software process for application layer 
+       : interface between process and internet 
+
+
+Ports : used for the identification of the application 
+        { but which tab in that web application }
+
+     : Ephemeral Ports {assign random port number for the time being and after termination of the tab it empty the port and available to reassign }
+
+
+HTTP : {client server protocol }
+     : application layer protocol 
+     :every application layer protocol require transport layer protocols {UDP, TCP}
+     :it uses TCP for transportation 
+     :stateless protocol
+     :server will not store client data 
+
+HTTP methods telling server what to do 
+  >GET getting info 
+  >POST give to server
+  >PUT edit the data
+  >DELETE remove the data 
+
+
+  Status for the type of the response accordingly 
+  1XX -> information category 
+  2XX -> success response 
+  3XX -> redirection purpose 
+  4XX -> client error
+  5XX -> server error
+
+
+  if http is stateless then how the server identify our 
+  login activity : use the cookies -> unique string 
+  cookies are stored in browser 
+
+  their are also third party cookies :
+   cookies for sites u never visited .
+
+   ---------------------------------------------------------------
+   -----------------------------------------------------
+   ------------------------------------------------------------
+
+
+   # how email works 
+   protocols used for emails 
+
+   >>SMTP (for sending)
+   >>POP3 (for receving)
+
+   SMTP uses TCP no data loss is tollerated 
+
+   here is example 
+
+   sender ----> sender SMTP server ------> receiver SMTP server -------> reciever
+   only if they have different email then this connection establish 
+
+   if they have same then they can send msg directly without server connection 
+   like both having gmail.com
+
+   we can also get our gmail server ip 
+   by command 
+   >> ~nslookup -type =mn gmail.com 
