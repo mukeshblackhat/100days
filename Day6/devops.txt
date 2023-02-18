@@ -1,0 +1,55 @@
+as we learned about pop3 protocol for email 
+
+their is one more protocol by which we can access aur send and recieve mail 
+ >IMAP : internet mail access protocol 
+    ->  can view email on multiple devices 
+    -> kept of server till deleted 
+    -> multiple local copies made for users 
+
+
+now lets talk about we get the ip of the domain names lets look into DNS which is resposible for this 
+
+DNS : domain name system (used to find I.P. address of server)
+
+     mail.google.com 
+     mail---> sub domain 
+     google -----> second level domain 
+     com -------> top level domain 
+
+
+Root DNS server
+--> have top level domain {.in , .com , .tech , .org }
+these are managed by ICANN 
+
+when we talk about how dns work it first check in cookies and then to isp and after that to root server 
+rootserver send it to the ISP where then it goes to Top level domain then it get info about it required .
+
+you can check about the dns respones with terminal 
+~dig google.com
+~man dig 
+
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2. TRANSPORT LAYER 
+
+transport layer works between application layer and network layer 
+network layer work to handle the data that goes between  the users 
+sockets are attaiched to the transport layer to handle the data sent to which tab or maiatain the connection between the network  layer and application layer 
+when we send multiple messeges , files , voice calls then then transport layer multiplex the data and on the reciever side Demultiple handle the 
+data back to separation 
+
+transport layer also handle the conjestion happing with the data flow through layer 
+their are some conjestion layer which help in controlling the congestion of the data request and transportation 
+
+while transfering the data , we should be aware of the thing that we dont loose any data for that 
+we use CHECKSUMS they are provided with data and on other side after data assembled back then they apply checksum to recheck whether this 
+is all the data that is send of something else .
+
+
+Timmer : 
+how to we know that something is lost or now we use timmer theri to calculate the time for the transmission of the data between the users 
+and to know where the packet is lost or not .
+while their can be mainy poosibilities that can take place while data transmission with duplication of the data packet 
+for avoiding the duplication of the data problems we use Sequence number 
