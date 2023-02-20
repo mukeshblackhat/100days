@@ -1,0 +1,169 @@
+UDP : user datagram protocol
+ ->data may or may not deleivered 
+ ->data may change 
+ -> data may corrupt 
+ -> data may not be in order 
+
+ {connectionless protocol}
+
+ uses checksum but it doesnt care that whethere data is corrupted or not 
+
+ lets talk about what UDP packets carry with them 
+
+ first talk about headers :
+    -> source port number 
+    -> destination port number 
+    -> length og datagram 
+    -> checksum 
+secondly it carries data that it transfers 
+
+UDP is faster so it is used for vedio calling , gaming , also in DNS 
+
+
+--------------------------------------------------------------------------------------------
+
+lets talk about TCP 
+
+TCP : transmission control protocol 
+
+data is mainly transfered between network layer and transport layer 
+
+-> transport layer protocol 
+-> application layer sends lots of the raw data 
+-> tcp segments this data and divide it into chuncks
+-> add headers 
+-> it may also connect the data network layer 
+-> congestion control 
+-> takes care of two thing 
+   1. when data doen't arrived 
+   2. maintain order of data 
+
+features of the tcp 
+  -> connection oriented 
+  -> error control 
+  -> conjestion control 
+  -> bidirectional , full duplex 
+
+
+3 way handshake :
+  1. client send a SYN flag and seq. not to server 
+  2. server send the ACK flag with seq no. of its own and ACK no. (which is privious step seq. no.)
+  3. then client send back the ACK falg with next seq no. and ACK no. 
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Network layer :
+here we work with routers 
+
+
+layer        how data transfer take place 
+
+transport    segments
+network      packets 
+datalink     frames 
+
+
+
+as we deal with routers in network layer so we know that each router have their own 
+network layer address by which it is identified outside the layer 
+
+192.168.2.30
+here 
+192.168.2-> is network address 
+30 -> your device address 
+
+their are some things called 
+routing table 
+router hopping 
+forwarding table 
+control panel : build routing table 
+routes are like the nodes and links between then are like edges 
+
+routing are done in two ways one is 
+routing in static way which is done manually 
+other is dynamic routing take place by its own 
+
+-------------------------------------------------------------------------------------------------------
+
+Internet protocol (IP)
+their is are two types of it 
+ipv4 and ipv6 both are different and 
+ipv4 is bidirectional and ipv6 is not bidirectional 
+
+when we talk about the ip addresses then their are some classes of protocols 
+
+classes of ip addresses 
+a 0.0.0.0->127.255.255.255
+b 128.0.0.0-> 191.255.255.255
+c 192.0.0.0-> 223.255.255.255
+d 224.0.0.0->239.255.255.255
+e 240.0.0.0->255.255.255.255
+
+in very begining the ip addresses are allocated by first come first take but after wards 
+it is provided according to region specific not classes specific 
+ 
+ we can have different subnet part which is specific and can be dynamic
+ 12.0.0.0.0/31 here 31 reperesent that first 31 bits are reserved for subnet and rest can be used
+
+ some addressed are reserved like 
+ 127.0.0.0.0/8 
+ for local host 
+ for loop call back 
+
+ Packets : here header is of 20bytes and 
+   it contains ipv , length , indentifiers , flags , protocols , checksums , ttl( time to leave ),etx
+
+
+
+these all are about ipv4 now lets talk about ipv6 
+
+ipv6 is version 6 and not yet fully estaiblished and using 
+it contains 128 bits so ti can create lot of ip address 
+
+cons : not backword compatible 
+     : isps would have to shift , lot of hardware work 
+
+
+
+
+
+Middle boxes these are something also need to discussed 
+these contain 
+1. firewall 
+   it is about global internet and your trusted network 
+   it filter out ip packets based on various rules 
+   1. addresses 
+   2. modify packets 
+   3. port no's 
+   4. flags
+   5. protocols 
+
+   firewalls are both stateless and statefull but statefull is more effective 
+ it can be found in transort as well network layer 
+
+2. network address translation 
+  it is also a nice concept 
+
+
+  ---------------------------------------------------------------------------------------------------
+
+  Data link layer 
+
+  it is the last layer we need to disscuss to know about internet 
+  here every router have ip address by which isp identify them 
+  every router assign new ip to each device connnected to it using DHCP 
+
+  now lets see how is data transfered here in this 
+
+  devices are connected in the LAN  using : data link layer address 
+  when one device send request it see all the cache of the device using ARP {address resolution protocol }
+
+  when not found in cache it send a request to everydevice assking about is it your address with DLLa of sender 
+  and with ip address of destination 
+  and this is done with framing {data fragments like packets }
+
+
+
+
+
+  
